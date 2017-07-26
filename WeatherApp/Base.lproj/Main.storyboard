@@ -94,6 +94,7 @@
                             <constraint firstItem="UDc-iq-52l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="3DE-yu-8MB"/>
                             <constraint firstItem="4D1-Gp-fQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="4Lq-rl-kM5"/>
                             <constraint firstItem="JXW-M4-ibB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="6Fy-ff-MNe"/>
+                            <constraint firstItem="4D1-Gp-fQK" firstAttribute="top" secondItem="TZr-lj-L7y" secondAttribute="top" id="6uE-KT-LTA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GXP-0a-KKz" secondAttribute="bottom" priority="750" constant="85.5" id="74Q-MX-Usz"/>
                             <constraint firstItem="7n1-rN-xZ2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7nd-uk-O40"/>
                             <constraint firstItem="Lt3-NH-lzg" firstAttribute="top" secondItem="JXW-M4-ibB" secondAttribute="bottom" constant="32" id="BUh-TM-8eK"/>
@@ -102,7 +103,7 @@
                             <constraint firstItem="Iub-YM-uuw" firstAttribute="centerX" secondItem="4D1-Gp-fQK" secondAttribute="centerX" id="MVQ-C4-VQF"/>
                             <constraint firstItem="7n1-rN-xZ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RI0-Us-VUG"/>
                             <constraint firstItem="GXP-0a-KKz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UDc-iq-52l" secondAttribute="bottom" constant="15" id="She-V7-Zcw"/>
-                            <constraint firstItem="7n1-rN-xZ2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lt3-NH-lzg" secondAttribute="bottom" constant="16" id="W5n-2f-ZGW"/>
+                            <constraint firstItem="7n1-rN-xZ2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Lt3-NH-lzg" secondAttribute="bottom" constant="10" id="W5n-2f-ZGW"/>
                             <constraint firstItem="JXW-M4-ibB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xlk-vf-AGx"/>
                             <constraint firstItem="UDc-iq-52l" firstAttribute="top" secondItem="TZr-lj-L7y" secondAttribute="bottom" constant="8" id="a2K-Wf-g05"/>
                             <constraint firstItem="XwL-IU-4F1" firstAttribute="centerX" secondItem="JXW-M4-ibB" secondAttribute="centerX" id="cct-UY-7cN"/>
@@ -110,12 +111,15 @@
                             <constraint firstItem="Iub-YM-uuw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="fGh-6J-egE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F41-Hu-yim" secondAttribute="trailing" id="gLy-1s-hYS"/>
                             <constraint firstItem="Iub-YM-uuw" firstAttribute="top" secondItem="4D1-Gp-fQK" secondAttribute="bottom" constant="8" id="hRR-w0-ned"/>
-                            <constraint firstItem="4D1-Gp-fQK" firstAttribute="top" secondItem="7n1-rN-xZ2" secondAttribute="bottom" constant="16" id="qOE-oC-fAv"/>
                             <constraint firstItem="XwL-IU-4F1" firstAttribute="centerY" secondItem="JXW-M4-ibB" secondAttribute="centerY" id="qQ4-b2-ehe"/>
                             <constraint firstItem="TZr-lj-L7y" firstAttribute="top" secondItem="7n1-rN-xZ2" secondAttribute="bottom" constant="16" id="sKW-kT-ciD"/>
                             <constraint firstItem="Lt3-NH-lzg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u4s-CF-Yd1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentHumidityLabel" destination="UDc-iq-52l" id="tWw-ib-iKE"/>
+                        <outlet property="currentTemperatureLabel" destination="7n1-rN-xZ2" id="EJH-Gw-QEv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
