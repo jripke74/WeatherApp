@@ -15,3 +15,4 @@ struct CurrentWeather {
     let summary: String
     let icon: String
 }
+
