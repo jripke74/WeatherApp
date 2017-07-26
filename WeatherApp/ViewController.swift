@@ -18,5 +18,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var refreshButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let currentWeather = CurrentWeather(temperature: 85.0, humidity: 0.8, precipitationProbability: 0.34, summary: "hot", icon: "clear-day")
+        let currentWeatherViewModel = CurrentWeatherViewModel(model: currentWeather)
+        displayWeather(using: currentWeatherViewModel)
+    }
+    
+    func displayWeather(using viewModel: CurrentWeatherViewModel) {
+        currentTemperatureLabel.text = viewModel.temperature
+        currentHumidityLabel.text = viewModel.humidity
+        currentPrecipitationLabel.text = viewModel.precipitationProbability
+        currentSummaryLabel.text = viewModel.summary
+        currentWeatherIcon.image = viewModel.icon
+    }
 }
 

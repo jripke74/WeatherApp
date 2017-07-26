@@ -18,11 +18,11 @@ struct CurrentWeatherViewModel {
     
     init(model: CurrentWeather) {
         let roundedTemperature = Int(model.temperature)
-        self.temperature = "\(roundedTemperature)"
+        self.temperature = "\(roundedTemperature)°"
         let humidityPercentValue = Int(model.humidity * 100)
-        self.humidity = "\(humidityPercentValue)"
-        let precipPercentValue = Int(model.precipitationProbility * 100)
-        self.precipitationProbability = "\(precipPercentValue)"
+        self.humidity = "\(humidityPercentValue)%"
+        let precipPercentValue = Int(model.precipitationProbability * 100)
+        self.precipitationProbability = "\(precipPercentValue)%"
         self.summary = model.summary
         let weatherIcon = WeatherIcon(iconString: model.icon)
         self.icon = weatherIcon.image

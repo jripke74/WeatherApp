@@ -117,8 +117,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="XwL-IU-4F1" id="noS-c6-U8c"/>
                         <outlet property="currentHumidityLabel" destination="UDc-iq-52l" id="tWw-ib-iKE"/>
+                        <outlet property="currentPrecipitationLabel" destination="Iub-YM-uuw" id="cXo-ZE-YZQ"/>
+                        <outlet property="currentSummaryLabel" destination="GXP-0a-KKz" id="izG-TA-O43"/>
                         <outlet property="currentTemperatureLabel" destination="7n1-rN-xZ2" id="EJH-Gw-QEv"/>
+                        <outlet property="currentWeatherIcon" destination="j2F-5c-6QZ" id="MQi-Vj-Vh5"/>
+                        <outlet property="refreshButton" destination="JXW-M4-ibB" id="6qG-e0-VyU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
