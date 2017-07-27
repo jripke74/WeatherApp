@@ -8,12 +8,12 @@
 
 import Foundation
 
-class DarkSkyAPIClien {
+class DarkSkyAPIClient {
     
     fileprivate let apiKey = "a0a33a259c4028bb4952620e87d26637"
     
     lazy var baseURL: URL = {
-        return URL(string: "https://api.darksky.net/forecast/\(self.apiKey)")!
+        return URL(string: "https://api.darksky.net/forecast/\(self.apiKey)/")!
     }()
     
     let downloader = JSONDownloader()
@@ -25,6 +25,7 @@ class DarkSkyAPIClien {
             completion(nil, .invalidURL)
             return
         }
+        print("URL: \(url)")
         let request = URLRequest(url: url)
         let task = downloader.jsonTask(with: request) { (json, error) in
             guard let json = json else {
