@@ -15,6 +15,9 @@
 		897B3A421F28DD6700DBF368 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B3A411F28DD6700DBF368 /* CurrentWeather.swift */; };
 		897B3A441F2918AB00DBF368 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B3A431F2918AB00DBF368 /* WeatherIcon.swift */; };
 		897B3A461F291D3900DBF368 /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B3A451F291D3900DBF368 /* CurrentWeatherViewModel.swift */; };
+		897B3A481F2941A100DBF368 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B3A471F2941A100DBF368 /* JSONDownloader.swift */; };
+		897B3A4A1F29455F00DBF368 /* DarkSkyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B3A491F29455F00DBF368 /* DarkSkyError.swift */; };
+		897B3A4C1F2A34FA00DBF368 /* DarkSkyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B3A4B1F2A34FA00DBF368 /* DarkSkyAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		897B3A411F28DD6700DBF368 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		897B3A431F2918AB00DBF368 /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		897B3A451F291D3900DBF368 /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
+		897B3A471F2941A100DBF368 /* JSONDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		897B3A491F29455F00DBF368 /* DarkSkyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyError.swift; sourceTree = "<group>"; };
+		897B3A4B1F2A34FA00DBF368 /* DarkSkyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				897B3A411F28DD6700DBF368 /* CurrentWeather.swift */,
 				897B3A431F2918AB00DBF368 /* WeatherIcon.swift */,
 				897B3A451F291D3900DBF368 /* CurrentWeatherViewModel.swift */,
+				897B3A471F2941A100DBF368 /* JSONDownloader.swift */,
+				897B3A491F29455F00DBF368 /* DarkSkyError.swift */,
+				897B3A4B1F2A34FA00DBF368 /* DarkSkyAPIClient.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -146,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897B3A4A1F29455F00DBF368 /* DarkSkyError.swift in Sources */,
+				897B3A481F2941A100DBF368 /* JSONDownloader.swift in Sources */,
 				897B3A321F28C77900DBF368 /* ViewController.swift in Sources */,
+				897B3A4C1F2A34FA00DBF368 /* DarkSkyAPIClient.swift in Sources */,
 				897B3A441F2918AB00DBF368 /* WeatherIcon.swift in Sources */,
 				897B3A461F291D3900DBF368 /* CurrentWeatherViewModel.swift in Sources */,
 				897B3A421F28DD6700DBF368 /* CurrentWeather.swift in Sources */,
