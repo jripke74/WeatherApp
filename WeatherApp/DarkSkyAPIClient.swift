@@ -27,7 +27,17 @@ class DarkSkyAPIClien {
         }
         let request = URLRequest(url: url)
         let task = downloader.jsonTask(with: request) { (json, error) in
-            
+            guard let json = json else {
+                completion(nil, error)
+                return
+            }
+            guard let currentWeatherJSON = json["currently"] as? [String: AnyObject],
+                let currentWeather = CurrentWeather(json: currentWeatherJSON) else {
+                    completion(nil, .jsonParsingFailure)
+                    return
+            }
+            completion(currentWeather, nil)
         }
+        task.resume()
     }
 }
